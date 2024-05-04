@@ -1,36 +1,48 @@
-## For example, if you want to create a new Flutter project named "my_flutter_app" in the current directory, you can run:
+# Project Name
 
+Brief description of the project.
 
-##command: flutter create my_flutter_app   <-- to get flutter template
+## Installation
 
-##This will create a new Flutter project in a directory named "my_flutter_app" in your current location. Make sure to replace "my_flutter_app" with the desired name for your project.
+Instructions on how to install the project.
 
-##cd my_flutter_app
-##flutter run
-It seems like the Dart SDK version is still not updated to support null safety, despite our efforts to update it. Let's try another approach:
+## Usage
 
-    First, make sure you have Flutter SDK installed on your system.
+Instructions on how to use the project.
 
-    Run the following command to switch to a Flutter channel that supports null safety:
+## Example
+
+```java
+import io.flutter.embedding.android.FlutterActivity;
+flutter create my_flutter_app
+cd my_flutter_app
+flutter run
+If you encounter an issue with null safety, follow these additional steps:
+
+    Ensure you have Flutter SDK installed on your system.
+
+    Switch to a Flutter channel that supports null safety:
+
+    bash
 
 flutter channel stable
 
-Then, run the following command to upgrade Flutter:
+Upgrade Flutter:
+
+bash
 
 flutter upgrade
 
-After the upgrade is complete, run the following command to enable null safety for your Flutter project:
+Enable null safety for your Flutter project:
 
-css
+bash
 
-flutter migrate --apply-changes
+    flutter migrate --apply-changes
 
-This command will migrate your project to null safety. Follow the on-screen instructions if any.
+    Follow the on-screen instructions if any.
 
 Once the migration is complete, try running your Flutter project again:
 
-arduino
+bash
 
-    flutter run
-
-This should resolve the null safety compatibility issue and allow you to run your Flutter project successfully. If you encounter any errors or need further assistance, feel free to ask!
+flutter run
