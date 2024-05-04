@@ -1,4 +1,4 @@
-package com.example.brew_mates
+package com.thenetninja.brew_mates
 
 import io.flutter.embedding.android.FlutterActivity
 
